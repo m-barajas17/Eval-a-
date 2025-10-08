@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evalúa+ | La Evolución de la Evaluación Interactiva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            <span>Evalúa+</span>
+        </div>
+        <nav>
+            <a href="#panels" class="nav-link">Comenzar</a>
+            <a href="#features" class="nav-link">Características</a>
+            <a href="#demo" class="nav-link">Demo</a>
+            <a href="#" class="cta-button">Acceder</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="badge" data-aos="fade-up" data-aos-delay="100">🚀 La nueva era de la evaluación</div>
+                <h1 data-aos="fade-up" data-aos-delay="200"><span>Innovación</span> que inspira.<br>Resultados que impactan.</h1>
+                <p data-aos="fade-up" data-aos-delay="300">Evalúa+ es la plataforma definitiva para modernizar tus métodos de enseñanza. Ahorra tiempo, motiva a tus estudiantes y obtén análisis detallados como nunca antes.</p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#panels" class="cta-button hero-cta">Empezar ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="panels">
+            <div class="panel interactive-card" data-aos="fade-right">
+                <div class="panel-icon teacher-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5c1.93 0 3.5 1.57 3.5 3.5S13.93 10.5 12 10.5 8.5 8.93 8.5 7 10.07 3.5 12 3.5M12 1c-3.04 0-5.5 2.46-5.5 5.5S8.96 12 12 12s5.5-2.46 5.5-5.5S15.04 1 12 1zm0 13c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4zm6 5H6v-.99c.2-.72 2.4-1.99 6-1.99s5.8 1.27 6 1.99V19z"/></svg>
+                </div>
+                <h3>Eres Docente</h3>
+                <p class="panel-desc">Crea y gestiona evaluaciones en minutos. Nuestra plataforma intuitiva te permite diseñar pruebas, generar códigos de acceso únicos y seguir el rendimiento de tus grupos en tiempo real.</p>
+                <button class="panel-button" id="open-teacher-modal">Crear una sala</button>
+            </div>
+            <div class="panel interactive-card" data-aos="fade-left">
+                 <div class="panel-icon student-icon">
+                   <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <h3>Eres Estudiante</h3>
+                <p class="panel-desc">Accede a tus evaluaciones de forma rápida y sencilla. Solo necesitas el código de la sala para comenzar. Al terminar, recibe tu nota y una retroalimentación clara para que sigas mejorando.</p>
+                <button class="panel-button" id="open-student-modal">Entrar a una sala</button>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Todo lo que necesitas, y más</h2>
+                <p>Descubre las herramientas que transformarán tu manera de evaluar.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg></div>
+                    <h4>Calificación Automática</h4>
+                    <p>Olvida las largas horas de calificación manual. Evalúa+ procesa las respuestas al instante.</p>
+                </div>
+                <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+                    <h4>Retroalimentación Detallada</h4>
+                    <p>Cada pregunta puede incluir explicaciones y recursos para que el aprendizaje no se detenga.</p>
+                </div>
+                <div class="feature-card interactive-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-.83 0-1.54.34-2.09.88C12.34 4.34 10.33 4 8 4c-4.42 0-8 3.58-8 8s3.58 8 8 8c2.33 0 4.34-.34 5.91-1.91.54.54 1.25.88 2.09.88 1.66 0 3-1.34 3-3 0-1.3-.84-2.4-2-2.82.55-.48.91-1.17.91-1.93s-.36-1.45-.91-1.93c.16-.42.16-.88.16-1.34zM8 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.65 0 3.1.67 4.21 1.79-.1.03-.2.06-.31.11-1.12.5-1.9 1.54-1.9 2.86v.58c-1.49.03-2.85.49-4 1.2V18z"/></svg></div>
+                    <h4>Banco de Preguntas</h4>
+                    <p>Crea tu propia biblioteca de preguntas y reutilízalas en futuras evaluaciones fácilmente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Prueba Interactiva</h2>
+                <p>Selecciona una asignatura y comprueba la experiencia Evalúa+.</p>
+            </div>
+            <div class="subject-selector" data-aos="fade-up" data-aos-delay="100">
+                <button class="subject-tab active" data-subject="spanish">Español</button>
+                <button class="subject-tab" data-subject="natural">Ciencias Naturales</button>
+                <button class="subject-tab" data-subject="social">Ciencias Sociales</button>
+            </div>
+            <div class="questions-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="question-card interactive-card active" id="spanish-q">
+                    <p class="question-main">"El amor es un faro erigido para siempre que contempla las tempestades y nunca se estremece". En este fragmento de Shakespeare, ¿cuál es la función principal de la metáfora del faro?</p>
+                    <form class="question-form" data-correct="C">
+                        <div class="options">
+                            <label class="option"><input type="radio" name="q1" value="A"><span>A) Comparar el amor con la soledad del océano.</span></label>
+                            <label class="option"><input type="radio" name="q1" value="B"><span>B) Indicar que el amor es una guía solo para navegantes.</span></label>
+                            <label class="option"><input type="radio" name="q1" value="C"><span>C) Representar el amor como una guía constante e inmutable ante la adversidad.</span></label>
+                            <label class="option"><input type="radio" name="q1" value="D"><span>D) Sugerir que el amor es una construcción artificial y fría.</span></label>
+                        </div>
+                        <button type="submit" class="cta-button-form">Verificar</button>
+                        <div class="feedback"></div>
+                    </form>
+                </div>
+                <div class="question-card interactive-card" id="natural-q">
+                    <p class="question-main">Si una célula eucariota presenta una alta actividad de síntesis de proteínas para exportación, ¿qué organelo esperaría encontrar abundantemente desarrollado en su citoplasma?</p>
+                    <form class="question-form" data-correct="B">
+                        <div class="options">
+                            <label class="option"><input type="radio" name="q2" value="A"><span>A) Lisosomas.</span></label>
+                            <label class="option"><input type="radio" name="q2" value="B"><span>B) Retículo endoplasmático rugoso (RER).</span></label>
+                            <label class="option"><input type="radio" name="q2" value="C"><span>C) Mitocondrias.</span></label>
+                            <label class="option"><input type="radio" name="q2" value="D"><span>D) Retículo endoplasmático liso (REL).</span></label>
+                        </div>
+                        <button type="submit" class="cta-button-form">Verificar</button>
+                        <div class="feedback"></div>
+                    </form>
+                </div>
+                <div class="question-card interactive-card" id="social-q">
+                    <p class="question-main">La Guerra Fría fue un enfrentamiento ideológico entre dos superpotencias. ¿Cuál de las siguientes opciones describe mejor una consecuencia geopolítica directa de este conflicto?</p>
+                    <form class="question-form" data-correct="D">
+                        <div class="options">
+                            <label class="option"><input type="radio" name="q3" value="A"><span>A) La unificación de Alemania en un solo estado socialista.</span></label>
+                            <label class="option"><input type="radio" name="q3" value="B"><span>B) El fin de todas las monarquías en Europa.</span></label>
+                            <label class="option"><input type="radio" name="q3" value="C"><span>C) La descolonización pacífica y coordinada de África y Asia.</span></label>
+                            <label class="option"><input type="radio" name="q3" value="D"><span>D) La formación de alianzas militares como la OTAN y el Pacto de Varsovia.</span></label>
+                        </div>
+                        <button type="submit" class="cta-button-form">Verificar</button>
+                        <div class="feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="manual" data-aos="zoom-in">
+            <div class="manual-card interactive-card">
+                <div class="manual-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                </div>
+                <h3>Tu Guía para el Éxito</h3>
+                <p>Todo lo que necesitas para dominar Evalúa+. Nuestra guía completa te mostrará paso a paso cómo crear salas, gestionar evaluaciones y aprovechar al máximo nuestras herramientas inteligentes.</p>
+                <a href="#" class="cta-button-form">Descargar Manual (PDF)</a>
+            </div>
+        </section>
+
+    </main>
+    
+    <div class="modal-overlay" id="teacher-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>Crear Sala de Evaluación</h3>
+            <p>Completa los datos para generar una nueva sala.</p>
+            <form>
+                <input type="text" placeholder="Nombre del profesor" required>
+                <select required>
+                    <option value="" disabled selected>-- Asignatura --</option>
+                    <option value="es">Español</option>
+                    <option value="cn">Ciencias Naturales</option>
+                    <option value="cs">Ciencias Sociales</option>
+                </select>
+                <input type="number" placeholder="Nº de preguntas" min="1" max="30" required>
+                <button type="submit" class="cta-button-form">Generar Código</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="student-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>Entrar a una Sala</h3>
+            <p>Ingresa tus datos y el código para unirte.</p>
+            <form>
+                <input type="text" placeholder="Tu nombre completo" required>
+                <input type="text" placeholder="Código de la sala (ej: A4B1C2)" required>
+                <button type="submit" class="cta-button-form">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Evalúa+ • Diseñado con 💚 por Miguel Barajas y Daniel Calvo</p>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
